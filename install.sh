@@ -60,6 +60,9 @@ cd fonts
 cd ..
 rm -rf fonts
 
+# Add global git Ignore 
+git config --global core.excludesFile ~/.dotfiles/.gitignore_global
+
 # Symlink the Mackup config file to the home directory
 # ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
