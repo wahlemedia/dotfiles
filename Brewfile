@@ -16,6 +16,7 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'trash' # Manage the Trash bin
 brew 'pkg-config'
+brew 'svn' # install SVN, since it is deprecated in Xcode 11 / Catalina 10.16 (see https://stackoverflow.com/questions/60869347/mac-command-line-tools-11-4-no-longer-has-svn)
 brew 'htop' 
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached 
