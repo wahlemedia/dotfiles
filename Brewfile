@@ -31,6 +31,7 @@ brew 'memcached'
 brew 'mysql'
 brew 'redis'
 brew 'node'
+brew 'ffmpeg'
 
 # Apps
 cask '1password'
