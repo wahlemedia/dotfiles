@@ -40,6 +40,7 @@ mv composer.phar /usr/local/bin/composer
 
 # Install globale Node packages
 npm install -g @vue/cli
+npm install -g jshint
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
