@@ -32,6 +32,7 @@ brew 'mysql'
 brew 'redis'
 brew 'node'
 brew 'ffmpeg'
+brew 'tig'
 
 # Apps
 cask '1password'
