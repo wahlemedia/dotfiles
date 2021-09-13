@@ -10,7 +10,9 @@ alias dotfiles="cd $DOTFILES"
 
 # Laravel
 alias a="php artisan"
+alias sa="sail php artisan"
 alias ams="php artisan migrate:fresh --seed"
+alias sail='bash vendor/bin/sail'
 
 # PHP
 alias cfresh="rm -rf vender/ composer.lock && composer i"

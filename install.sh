@@ -44,8 +44,14 @@ npm install -g @vue/cli
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Create a Code directory
+# Create a Code directory and Park laravel valet
 mkdir $HOME/Code
+cd $HOME/Code
+# valet park
+# cd $HOME
+
+# Park laravel valet
+
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
