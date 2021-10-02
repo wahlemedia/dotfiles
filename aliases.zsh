@@ -10,7 +10,7 @@ alias dotfiles="cd $DOTFILES"
 
 # Laravel
 alias a="php artisan"
-alias sa="sail php artisan"
+alias saa="sail php artisan"
 alias ams="php artisan migrate:fresh --seed"
 alias sail='bash vendor/bin/sail'
 
@@ -21,5 +21,6 @@ alias cfresh="rm -rf vender/ composer.lock && composer i"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
 # GIT
+alias init='git init && git add . && git commit -m "initial commit"'
 alias wip='git add . && git commit -m '\''wip'\'
 alias nah='git reset --hard HEAD'
