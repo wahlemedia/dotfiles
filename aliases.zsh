@@ -24,3 +24,9 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias init='git init && git add . && git commit -m "initial commit"'
 alias wip='git add . && git commit -m '\''wip'\'
 alias nah='git reset --hard HEAD'
+
+
+# Helper Funktions 
+# Credits Philo Hermans 
+# https://twitter.com/Philo01/status/1444295779506601986/photo/1
+function db() { open mysql://127.0.0.1/$1 }
