@@ -2,7 +2,7 @@
 alias copyssh='pbcopy < $HOME/.ssh/id_rsa.pub'
 alias reloadcli='source $HOME/.zshrc'
 alias reloaddns='dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
-alias shrug='echo '¯\_(ツ)_/¯' | pbcopy'
+alias shrug='echo "¯\_(ツ)_/¯" | pbcopy'
 alias c='clear'
 
 # Directories
