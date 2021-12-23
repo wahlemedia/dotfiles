@@ -2,6 +2,9 @@
 
 echo "Setting up..."
 
+# install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Thanks to Dries Vints https://github.com/driesvints/dotfiles
 
 # Check for Homebrew and install it 
@@ -20,7 +23,7 @@ brew update
 
 # Install all dependencies
 brew tap homebrew/bundle
-brew bundle
+brew bundle --file $DOTFILES/Brewfile
 
 # Set default MySQL root password and auth type.
 # mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
@@ -29,7 +32,11 @@ brew bundle
 mysql_secure_installation
 
 # Install PHP extensions with PECL
-pecl install memcached
+pecl install memcached 
+
+# Set default MySQL root password and auth type
+mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
+
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
@@ -45,13 +52,13 @@ npm install -g jshint
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Create a Code directory and Park laravel valet
+# Create a Code directory
 mkdir $HOME/Code
-cd $HOME/Code
-# valet park
-# cd $HOME
 
-# Park laravel valet
+# Create subdirectories
+mkdir $HOME/Code/wahlemedia
+
+
 
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles

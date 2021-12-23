@@ -7,10 +7,12 @@ tap 'homebrew/bundle'
 
 
 # Binaries
+brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
+brew 'gh'
 brew 'grep'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
@@ -28,16 +30,18 @@ brew 'composer'
 brew 'imagemagick'
 brew 'libmemcached'
 brew 'memcached'
+brew 'meilisearch'
 brew 'mysql'
 brew 'redis'
 brew 'node'
 brew 'ffmpeg'
 brew 'tig'
+brew 'docker'
 
 # Apps
 cask '1password'
 cask '1password-cli'
-cask 'adobe-creative-cloud'
+#cask 'adobe-creative-cloud'
 cask 'discord'
 cask 'dropbox'
 cask 'google-backup-and-sync'
@@ -50,12 +54,24 @@ cask 'skype'
 cask 'slack'
 cask 'spotify'
 cask 'sourcetree'
+cask 'nifty'
+cask 'ray'
+cask 'tinkerwell'
+cask 'tint'
+cask 'helo'
+cask 'figma'
+cask 'phpstorm'
+cask 'signal'
+cask 'phpmon'
+cask 'imageoptim'
+cask 'gpg-suite'
 # cask 'there'
 cask 'the-unarchiver'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
 cask 'zoomus'
+cask 'docker'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -79,6 +95,7 @@ mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Magnet', id: 441258766
 mas 'Giphy Capture', id: 668208984
+mas 'DaVinci Resolve', id: 571213070
 
  
 
