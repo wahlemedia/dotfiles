@@ -73,6 +73,7 @@ cask 'whatsapp'
 cask 'zoomus'
 cask 'docker'
 cask 'stats'
+cask 'sizzy'
 
 # Quicklook
 cask 'qlcolorcode'
