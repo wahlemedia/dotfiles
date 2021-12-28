@@ -72,6 +72,7 @@ cask 'vlc'
 cask 'whatsapp'
 cask 'zoomus'
 cask 'docker'
+cask 'stats'
 
 # Quicklook
 cask 'qlcolorcode'
