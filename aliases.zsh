@@ -28,7 +28,7 @@ alias watch='npm run watch'
 alias docker-up='docker-compose up -d'
 
 # GIT
-alias init='git init && git add . && git commit -m 'initial commit''
+alias init='git init && git add . && git commit -m "initial commit"'
 alias gst='git status'
 alias gb='git branch'
 alias gc='git checkout'
