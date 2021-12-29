@@ -13,12 +13,12 @@ alias dotfiles='cd $DOTFILES'
 alias a='php artisan'
 alias fresh='php artisan migrate:fresh --seed'
 alias sail='bash vendor/bin/sail'
-alias saa='sail php artisan'
+alias sa='sail php artisan'
 alias sfresh='sail php artisan migrate:fresh --seed'
 
 # PHP
 alias cfresh='rm -rf vender/ composer.lock && composer i'
-alias composer='php -d memory_limit=-1 /opt/homebrew/bin/composer'
+# alias composer='php -d memory_limit=-1 /opt/homebrew/bin/composer'
 
 # JS
 alias nfresh='rm -rf node_modules/ package-lock.json && npm install'
