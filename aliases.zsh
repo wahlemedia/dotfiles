@@ -29,6 +29,7 @@ alias docker-up='docker-compose up -d'
 
 # GIT
 alias init='git init && git add . && git commit -m "initial commit"'
+alias finit='git flow init && git add . && git commit -m "initial commit"'
 alias gst='git status'
 alias gb='git branch'
 alias gc='git checkout'
@@ -48,9 +49,28 @@ alias resolve='git add . && git commit --no-edit'
 alias stash='git stash -u'
 alias unstage='git restore --staged .'
 
+# Misc
+alias myip='curl https://ipecho.net/plain; echo'
+
 
 
 # Helper Funktions 
 # Credits Philo Hermans 
 # https://twitter.com/Philo01/status/1444295779506601986/photo/1
 function db() { open mysql://127.0.0.1/$1 }
+
+
+# Convert a string to a kebab
+# inspired by https://stackoverflow.com/a/67149569
+function kebab() { 
+    echo $1 |\
+    sed 's/[ ]/-/g' |\
+    sed 's/\([^A-Z+]\)\([A-Z0-9]\)/\1-\2/g' |\
+    sed 's/\([0-9]\)\([A-Z]\)/\1-\2/g' |\
+    sed 's/\([A-Z]\)\([0-9]\)/\1-\2/g' |\
+    sed 's/--/-/g' |\
+    sed 's/\([\/]\)-/\1/g' |\
+    tr '[:upper:]' '[:lower:]' |\
+    cut -c -150 |\
+    pbcopy 
+}

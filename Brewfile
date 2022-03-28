@@ -15,6 +15,7 @@ brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
+brew 'git-flow'
 brew 'gh'
 brew 'grep'
 brew 'mackup'
